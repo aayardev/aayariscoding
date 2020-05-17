@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  background: hsl(0, 0%, 98%);
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  width: 80vw;
+  margin: auto;
+}
+.introduction {
+  margin: auto;
+  text-align: center;
+  color: hsl(234, 12%, 34%);
+}
+.introduction p {
+  width: 50%;
+  margin: auto;
+  color: hsl(229, 6%, 66%);
+}
+.features {
+  width: 100%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+.feature {
+  width: 30%;
+  align-self: center;
+  background: white;
+  position: relative;
+  height: 200px;
+  color: hsl(229, 6%, 66%);
+}
+.double {
+  background: hsl(0, 0%, 98%);
+  height: 400px;
+}
+.double div {
+  background: white;
+  position: relative;
+  height: 203px;
+  padding: 10px 0;
+  margin: 20px 0px;
+  box-sizing: border-box;
+}
+.feature img {
+  width: 50px;
+  margin: 20px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.feature p {
+  width: 80%;
+  margin: auto;
+}
+.feature h3 {
+  text-align: center;
+  color: hsl(234, 12%, 34%);
+}
+div.feature:first-child {
+  border-top: 3px solid hsl(180, 62%, 55%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.feature:last-child {
+  border-top: 3px solid hsl(212, 86%, 64%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.up {
+  border-top: 3px solid hsl(0, 78%, 62%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.down {
+  border-top: 3px solid hsl(34, 97%, 64%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+span {
+  font-weight: 100;
+}
+@media screen and (max-width: 900px) {
+  .features {
+    flex-direction: column;
+  }
+  .feature {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .double {
+    flex: 1;
+    margin-top: 20px;
+  }
+  .double .up {
+    margin-top: 0px;
+  }
+  .introduction p,
+  .introduction span,
+  .introduction h1 {
+    width: 90%;
+  }
+  .introduction span,
+  .introduction h1 {
+    font-size: 24px;
+  }
+  .introduction p {
+    font-size: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
